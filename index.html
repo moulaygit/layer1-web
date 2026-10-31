@@ -1,3 +1,157 @@
-   <h1>Hello from my server</h1>
-   <p>Deployed from Git.</p>
-<h1>Hello Sidi from my server</h1>
+  <!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alfred the Westie</title>
+<meta name="description" content="Meet Alfred, a West Highland White Terrier, and learn what makes the Westie breed so special.">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --card: #ffffff;
+    --ink: #1f2933;
+    --muted: #55616b;
+    --accent: #2b6a64;
+    --accent-soft: #e4f0ee;
+    --line: #e5e1d8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14181c;
+      --card: #1c2227;
+      --ink: #e8ecef;
+      --muted: #a3adb5;
+      --accent: #7cc4bd;
+      --accent-soft: #1f3330;
+      --line: #2c353c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+
+  header.hero { text-align: center; padding: 56px 0 36px; }
+  .paw { font-size: 44px; line-height: 1; }
+  .eyebrow {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  h1 { font-size: clamp(38px, 9vw, 64px); line-height: 1.05; margin: 14px 0 10px; letter-spacing: -0.02em; }
+  .tagline { max-width: 560px; margin: 0 auto; color: var(--muted); font-size: 18px; }
+
+  section { padding: 28px 0; }
+  h2 { font-size: 24px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); margin: 0 0 18px; max-width: 640px; }
+
+  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px;
+  }
+  .card h3 { margin: 0 0 4px; font-size: 16px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  .facts { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .fact {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px 16px;
+  }
+  .fact .k { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .fact .v { font-size: 20px; font-weight: 650; margin-top: 2px; }
+
+  ul.traits { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  ul.traits li {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    font-size: 15px;
+  }
+
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding: 36px 0 48px; border-top: 1px solid var(--line); margin-top: 24px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="hero">
+      <div class="paw" aria-hidden="true">&#128054;</div>
+      <span class="eyebrow">West Highland White Terrier</span>
+      <h1>Meet Alfred</h1>
+      <p class="tagline">Alfred is a Westie: small, white, full of confidence, and sure he is much bigger than he looks.</p>
+    </header>
+
+    <section>
+      <h2>About the breed</h2>
+      <p class="lede">The West Highland White Terrier, usually called a Westie, comes from the Scottish Highlands, where terriers were bred to hunt rats, foxes and other pests on farms. That background still shows today.</p>
+      <div class="facts">
+        <div class="fact"><div class="k">Origin</div><div class="v">Scotland</div></div>
+        <div class="fact"><div class="k">Weight</div><div class="v">15 to 20 lb</div></div>
+        <div class="fact"><div class="k">Height</div><div class="v">About 10 in</div></div>
+        <div class="fact"><div class="k">Lifespan</div><div class="v">12 to 16 years</div></div>
+        <div class="fact"><div class="k">Coat</div><div class="v">Double, white</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Personality</h2>
+      <p class="lede">Westies are known for a big personality in a small body.</p>
+      <ul class="traits">
+        <li>Confident</li>
+        <li>Spirited</li>
+        <li>Curious</li>
+        <li>Loyal</li>
+        <li>Independent</li>
+        <li>Playful</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Caring for a Westie</h2>
+      <p class="lede">A few things that keep a Westie like Alfred happy and healthy.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Exercise</h3>
+          <p>Daily walks and playtime. Terriers love to dig, chase and explore, so a secure yard or leash matters.</p>
+        </div>
+        <div class="card">
+          <h3>Grooming</h3>
+          <p>The white double coat needs regular brushing and professional grooming to stay clean and tidy.</p>
+        </div>
+        <div class="card">
+          <h3>Training</h3>
+          <p>Smart but stubborn. Short, upbeat sessions with treats and praise work better than harsh corrections.</p>
+        </div>
+        <div class="card">
+          <h3>Health</h3>
+          <p>Westies can be prone to skin sensitivities and allergies, so regular vet visits and a good diet help.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Made for Alfred, the best Westie. Served from my first EC2 server.
+    </footer>
+
+  </div>
+</body>
+</html>
