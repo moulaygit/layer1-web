@@ -1,29 +1,29 @@
-  <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alfred the Westie</title>
-<meta name="description" content="Meet Alfred, a West Highland White Terrier, and learn what makes the Westie breed so special.">
+<title>Alfred the Wheaten Terrier</title>
+<meta name="description" content="Meet Alfred, a Soft Coated Wheaten Terrier, and learn what makes the wheaten breed so special.">
 <style>
   :root {
-    --bg: #fbfaf7;
+    --bg: #fbf9f4;
     --card: #ffffff;
     --ink: #1f2933;
     --muted: #55616b;
-    --accent: #2b6a64;
-    --accent-soft: #e4f0ee;
-    --line: #e5e1d8;
+    --accent: #8a5a12;
+    --accent-soft: #f6ead2;
+    --line: #e7e1d3;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #14181c;
-      --card: #1c2227;
+      --bg: #15181b;
+      --card: #1d2227;
       --ink: #e8ecef;
-      --muted: #a3adb5;
-      --accent: #7cc4bd;
-      --accent-soft: #1f3330;
-      --line: #2c353c;
+      --muted: #a8b1b8;
+      --accent: #e3b765;
+      --accent-soft: #33291a;
+      --line: #2d353c;
     }
   }
   * { box-sizing: border-box; }
@@ -37,11 +37,21 @@
   }
   .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
 
-  header.hero { text-align: center; padding: 56px 0 36px; }
+  header.hero { text-align: center; padding: 48px 0 36px; }
   .paw { font-size: 44px; line-height: 1; }
+  .photo {
+    display: block;
+    width: 176px;
+    height: 176px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--card);
+    box-shadow: 0 0 0 1px var(--line), 0 8px 24px rgba(0, 0, 0, .14);
+  }
   .eyebrow {
     display: inline-block;
-    margin-top: 14px;
+    margin-top: 18px;
     padding: 4px 12px;
     border-radius: 999px;
     background: var(--accent-soft);
@@ -94,62 +104,63 @@
   <div class="wrap">
 
     <header class="hero">
-      <div class="paw" aria-hidden="true">&#128054;</div>
-      <span class="eyebrow">West Highland White Terrier</span>
+      <img class="photo" src="alfred.jpg" width="176" height="176" alt="Alfred, a Soft Coated Wheaten Terrier, sitting on the grass on a leash"
+           onerror="this.outerHTML='&lt;div class=&quot;paw&quot; aria-hidden=&quot;true&quot;&gt;&#128054;&lt;/div&gt;'">
+      <span class="eyebrow">Soft Coated Wheaten Terrier</span>
       <h1>Meet Alfred</h1>
-      <p class="tagline">Alfred is a Westie: small, white, full of confidence, and sure he is much bigger than he looks.</p>
+      <p class="tagline">Alfred is a wheaten terrier: soft wavy coat, a big heart, and a very enthusiastic hello.</p>
     </header>
 
     <section>
       <h2>About the breed</h2>
-      <p class="lede">The West Highland White Terrier, usually called a Westie, comes from the Scottish Highlands, where terriers were bred to hunt rats, foxes and other pests on farms. That background still shows today.</p>
+      <p class="lede">The Soft Coated Wheaten Terrier comes from Ireland, where it worked as an all-purpose farm dog, herding livestock, guarding the home and keeping pests away. Today it is best known as a cheerful family companion.</p>
       <div class="facts">
         <div class="fact"><div class="k">Origin</div><div class="v">Ireland</div></div>
-        <div class="fact"><div class="k">Weight</div><div class="v">35 to 40 lb</div></div>
-        <div class="fact"><div class="k">Height</div><div class="v">About 10 in</div></div>
-        <div class="fact"><div class="k">Lifespan</div><div class="v">12 to 16 years</div></div>
-        <div class="fact"><div class="k">Coat</div><div class="v">Double, white</div></div>
+        <div class="fact"><div class="k">Weight</div><div class="v">30 to 40 lb</div></div>
+        <div class="fact"><div class="k">Height</div><div class="v">17 to 19 in</div></div>
+        <div class="fact"><div class="k">Lifespan</div><div class="v">12 to 14 years</div></div>
+        <div class="fact"><div class="k">Coat</div><div class="v">Soft, wavy</div></div>
       </div>
     </section>
 
     <section>
       <h2>Personality</h2>
-      <p class="lede">Westies are known for a big personality in a small body.</p>
+      <p class="lede">Wheatens are famous for their friendly, bouncy greetings and their love of people.</p>
       <ul class="traits">
-        <li>Confident</li>
+        <li>Friendly</li>
         <li>Spirited</li>
-        <li>Curious</li>
-        <li>Loyal</li>
-        <li>Independent</li>
+        <li>Affectionate</li>
+        <li>Smart</li>
         <li>Playful</li>
+        <li>Energetic</li>
       </ul>
     </section>
 
     <section>
-      <h2>Caring for a Westie</h2>
-      <p class="lede">A few things that keep a Westie like Alfred happy and healthy.</p>
+      <h2>Caring for a wheaten</h2>
+      <p class="lede">A few things that keep a wheaten like Alfred happy and healthy.</p>
       <div class="grid">
         <div class="card">
           <h3>Exercise</h3>
-          <p>Daily walks and playtime. Terriers love to dig, chase and explore, so a secure yard or leash matters.</p>
+          <p>Daily walks and playtime. Wheatens are energetic and enjoy games, fetch and time outdoors.</p>
         </div>
         <div class="card">
           <h3>Grooming</h3>
-          <p>The white double coat needs regular brushing and professional grooming to stay clean and tidy.</p>
+          <p>The soft coat sheds little but tangles easily. Brush several times a week and schedule regular trims.</p>
         </div>
         <div class="card">
           <h3>Training</h3>
-          <p>Smart but stubborn. Short, upbeat sessions with treats and praise work better than harsh corrections.</p>
+          <p>Smart and eager to please, with a stubborn streak. Early socialization and upbeat, reward-based training work best.</p>
         </div>
         <div class="card">
           <h3>Health</h3>
-          <p>Westies can be prone to skin sensitivities and allergies, so regular vet visits and a good diet help.</p>
+          <p>The breed can be prone to some digestive, kidney and skin or food sensitivities, so regular vet visits are worthwhile.</p>
         </div>
       </div>
     </section>
 
     <footer>
-      Made for Alfred, the best Westie. Served from my first EC2 server.
+      Made for Alfred, the best wheaten. Served from my first EC2 server.
     </footer>
 
   </div>
